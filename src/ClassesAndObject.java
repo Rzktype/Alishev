@@ -11,7 +11,7 @@ public class ClassesAndObject {
     }
 }
 
-class Person {
+class Person1 {
     // У класса могут быть:
     // 1. Данные (поля)
     // 2. Действия, которые он может совершать (методы)

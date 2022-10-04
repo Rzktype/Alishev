@@ -5,14 +5,14 @@ public class Switch {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введи возраст");
         int age = scanner.nextInt();
-        switch (age){
-            case 0 :
+        switch (age) {
+            case 0:
                 System.out.println("Ты родился");
                 break;
-            case 7 :
+            case 7:
                 System.out.println("Ты пошел в школу");
                 break;
-            case 18 :
+            case 18:
                 System.out.println("Ты закончил школу");
                 break;
             default:         // не обязательный оператор, без него не будет вывода если ни один из кейсов не подошел

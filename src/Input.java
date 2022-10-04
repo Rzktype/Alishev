@@ -9,6 +9,6 @@ public class Input {
         // System.out.println("вы ввели "+string);
         System.out.println("введите какое-нибудь число");
         int x = s.nextInt();
-        System.out.println("вы ввели "+x);
+        System.out.println("вы ввели " + x);
     }
 }

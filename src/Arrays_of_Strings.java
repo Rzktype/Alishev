@@ -10,16 +10,17 @@ public class Arrays_of_Strings {
         strings[2] = "Java";
 //        System.out.println(strings[0]+strings[1]);
 //        System.out.println(strings[2]);
-        for (int i = 0; i<strings.length; i++){
+        for (int i = 0; i < strings.length; i++) {
             System.out.println(strings[i]);
         }
         System.out.println();
-        for(String string:strings){
+        for (String string : strings) {
             System.out.println(string);
         }
-        int[] numbers1 = {1,2,3};
+        int[] numbers1 = {1, 2, 3};
         int sum = 0;
-        for (int x:numbers1) { sum = sum+x;
+        for (int x : numbers1) {
+            sum = sum + x;
         }
         System.out.println();
         System.out.println(sum);

@@ -10,10 +10,10 @@ public class DoWhile {
              value = scanner.nextInt();
          } */
         int value;
-        do{                               // гарантирует хотя бы разовое исполнение кода
+        do {                               // гарантирует хотя бы разовое исполнение кода
             System.out.println("Enter 5");
             value = scanner.nextInt();
-        } while (value !=5);
+        } while (value != 5);
         System.out.println("You enter 5 ;)");
     }
 }

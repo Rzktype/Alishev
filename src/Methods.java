@@ -1,12 +1,16 @@
 public class Methods {
     public static void main(String[] args) {
         Person person1 = new Person();
-        person1.name = "Roma";
+        person1.setNameAndAge("Roman",20);
         person1.age = 50;
-        person1.sayHello();
+        String s1 = "Volodya";
+
+        person1.speak();
         Person person2 = new Person();
         person2.name = "Vova";
         person2.age = 20;
+        person2.speak();
+        person2.setNameAndAge(s1,30); // не обязательно должен быть username из метода setName
         person2.speak();
         int year1 = person1.calculateYearsToRetirement();
         int year2 = person2.calculateYearsToRetirement();
@@ -19,6 +23,11 @@ public class Methods {
 class Person {
     String name;
     int age;
+
+    void setNameAndAge(String username, int userage) {
+        name = username;
+        age = userage;
+    }
 
     int calculateYearsToRetirement() {
         int years = 65 - age;

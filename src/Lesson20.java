@@ -1,30 +1,26 @@
 public class Lesson20 {
     public static void main(String[] args) {
-        People people1 = new People("asd");
-        System.out.println(people1);
+        People p1 = new People("Bob", 40);
+        p1.printNumberOfPeople();
+        People p2 = new People("Tom", 35);
+        p2.printNumberOfPeople();
+        People p3 = new People("Tomas",28);
+        p3.printNumberOfPeople();
+
     }
 }
 
 class People {
     private String name;
     private int age;
+    private static int countPeople;
 
-    public People() {
-        this.name = "Введите имя, возраст= ";
-        this.age = 0;
-//        System.out.println("Привет из первого конструктора!"); // вызовется при пустом значении в 3 строчке кода
-    }
-
-    public People(String name) {
-        System.out.println("Привет из второго конструктора!"); // вызовется при значении строка в 3 строчке кода
-        this.name = name;
-    }
-
-    public People(String name, int age) {
-        System.out.println("Привет из третьего конструктора!"); // вызовется при значение строка + число в 3 строчке кода
+    public People(String name, int age){
         this.name = name;
         this.age = age;
+        countPeople++;
     }
+
 
     public void setAge(int age) {
         this.age = age;
@@ -32,5 +28,9 @@ class People {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+public void printNumberOfPeople(){
+    System.out.println("Number of people "+countPeople);
     }
 }
